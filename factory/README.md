@@ -36,12 +36,8 @@ void main() {
 
 ```java
 // 2번 예시
-class IShapeFactory {
-  Shape createShape(int width, int height);
-}
-
 class ShapeFactory {
-  Shape createShape(int width, int height) {
+  static Shape createShape(int width, int height) {
     if (width == height) {
       Shape square = new Square();
       square.fillColor(BLACK);
@@ -55,8 +51,7 @@ class ShapeFactory {
 void main() {
     int width, height;
     // width, height 입력
-    IShapeFactory factory = new ShapeFactory();
-    Shape shape = factory.createShape(width, height);
+    Shape shape = ShapeFactory.createShape(width, height);
     shape.draw();
 }
 ```
