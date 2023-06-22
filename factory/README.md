@@ -36,20 +36,27 @@ void main() {
 
 ```java
 // 2번 예시
-Shape createShape(int width, int height) {
-  if (width == height) {
-    Shape square = new Square();
-    square.fillColor(BLACK);
-    return square;
-  } else {
-    return new Rectangle();
+class IShapeFactory {
+  Shape createShape(int width, int height);
+}
+
+class ShapeFactory {
+  Shape createShape(int width, int height) {
+    if (width == height) {
+      Shape square = new Square();
+      square.fillColor(BLACK);
+      return square;
+    } else {
+      return new Rectangle();
+    }
   }
 }
 
 void main() {
     int width, height;
     // width, height 입력
-    Shape shape = createShape(width, height);
+    IShapeFactory factory = new ShapeFactory();
+    Shape shape = factory.createShape(width, height);
     shape.draw();
 }
 ```
