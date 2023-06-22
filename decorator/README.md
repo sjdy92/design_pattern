@@ -39,25 +39,25 @@ class SkillDecorator extends Skill {
   }
 }
 
-class FireSkillDecorator {
+class FireSkillDecorator extends SkillDecorator {
   FireSkillDecorator(Skill component) {
     super(component);
   }
 
   public void execute() {
-    super.execute();
     print("불!");
+    super.execute();
   }
 }
 
-class ReflectSkillDecorator {
+class ReflectSkillDecorator extends SkillDecorator {
   ReflectSkillDecorator(Skill component) {
     super(component);
   }
 
   public void execute() {
+    print("반사되는!"); 
     super.execute();
-    print("반사되는!");
   }
 }
 ```
