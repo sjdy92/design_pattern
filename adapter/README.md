@@ -13,7 +13,13 @@
 ```java
 // 콘센트
 class PowerSocket {
+  int volt, shape;
+  
   void plugIn ( volt, shape ) {
+    if( this.volt != volt || this.shape == shape ) {
+      explode();
+      return;
+    }
     if( volt != 220 && volt != 110 ) {
       explode();
       return;
@@ -21,24 +27,36 @@ class PowerSocket {
 
     // 전기가 흘러라
   }
+
+  bool is220() {return volt == 220};
+  bool is110() {return volt == 110};
 }
 
 class IPowerAdapter {
   PowerSocket _powerSocket;
   IPowerAdapter(self._powerSocket);
 
-  void plugIn();
+  bool plugIn();
 }
 
 class SquarePowerAdapter_220 : IPowerAdapter{
-  void plugIn() override {
-    _powerSocket.plugIn(220, Square)
+  bool plugIn() override {
+    if(_powerSocket.is220() {
+      _powerSocket.plugIn(220, Square)
+      return true;
+    }
+
+    return false;
   }
 }
 
 class CirclePowerSocketAdapter_110 : IPowerAdapter{
-  void plugIn() override {
-    _powerSocket.plugIn(110, Circle)
+  bool plugIn() override {
+     if(_powerSocket.is110() {
+      _powerSocket.plugIn(110, Circle)
+      return true;
+    }
+    return false;
   }
 }
 
