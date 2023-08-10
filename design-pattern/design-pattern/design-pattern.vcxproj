@@ -19,16 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\adapter.cpp" />
-    <ClCompile Include="..\command.cpp" />
-    <ClCompile Include="..\decorator.cpp" />
-    <ClCompile Include="..\facade\facade.cpp" />
-    <ClCompile Include="..\factory.cpp" />
-    <ClCompile Include="..\singleton.cpp" />
+    <ClCompile Include="adapter.cpp" />
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="decorator.cpp" />
+    <ClCompile Include="facade.cpp" />
+    <ClCompile Include="factory.cpp" />
+    <ClCompile Include="singleton.cpp" />
     <ClCompile Include="template-method.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\facade\facade-info.h" />
+    <ClInclude Include="info\facade-info.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

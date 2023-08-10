@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "info.h"
+#include "info/facade-info.h"
 
 class DataLoaderFacade {
 public:
