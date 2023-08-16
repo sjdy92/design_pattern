@@ -36,6 +36,12 @@
     <ClCompile Include="facade.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="iterator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="composite.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="info\facade-info.h">

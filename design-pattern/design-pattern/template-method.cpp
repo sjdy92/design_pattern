@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 class CalculatorTemplate {
 public:
@@ -47,37 +48,37 @@ private:
     }
 };
 
-int main() {
-    int operand1;
-    int operand2;
-    CalculatorTemplate* calculator = nullptr;
-    while (true)
-    {
-        std::string input;
-        std::cin >> input;
-        
-        try {
-            int result = std::stoi(input);
-            if (nullptr == calculator)
-                operand1 = result;
-            else
-                operand2 = result;
-        }
-        catch (const std::invalid_argument& e) {
-            if ('+' == input[0])
-            {
-                calculator = new AdditionCalculator();
-            }
-            else if ('-' == input[0])
-            {
-                calculator = new SubtractionCalculator();
-            }
-            else if ('=' == input[0])
-            {
-                calculator->caculate(operand1, operand2);
-                calculator = nullptr;
-            }
-        }
-    }
-    return 0;
-}
+//int main() {
+//    int operand1;
+//    int operand2;
+//    CalculatorTemplate* calculator = nullptr;
+//    while (true)
+//    {
+//        std::string input;
+//        std::cin >> input;
+//        
+//        try {
+//            int result = std::stoi(input);
+//            if (nullptr == calculator)
+//                operand1 = result;
+//            else
+//                operand2 = result;
+//        }
+//        catch (const std::invalid_argument& e) {
+//            if ('+' == input[0])
+//            {
+//                calculator = new AdditionCalculator();
+//            }
+//            else if ('-' == input[0])
+//            {
+//                calculator = new SubtractionCalculator();
+//            }
+//            else if ('=' == input[0])
+//            {
+//                calculator->caculate(operand1, operand2);
+//                calculator = nullptr;
+//            }
+//        }
+//    }
+//    return 0;
+//}

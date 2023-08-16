@@ -1,3 +1,2 @@
-﻿  template-method.cpp
-C:\project\studty\design-pattern\design_pattern\design-pattern\design-pattern\template-method.cpp(66,45): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+﻿  composite.cpp
   design-pattern.vcxproj -> C:\project\studty\design-pattern\design_pattern\design-pattern\x64\Debug\design-pattern.exe

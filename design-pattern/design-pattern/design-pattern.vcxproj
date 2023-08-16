@@ -21,9 +21,11 @@
   <ItemGroup>
     <ClCompile Include="adapter.cpp" />
     <ClCompile Include="command.cpp" />
+    <ClCompile Include="composite.cpp" />
     <ClCompile Include="decorator.cpp" />
     <ClCompile Include="facade.cpp" />
     <ClCompile Include="factory.cpp" />
+    <ClCompile Include="iterator.cpp" />
     <ClCompile Include="singleton.cpp" />
     <ClCompile Include="template-method.cpp" />
   </ItemGroup>
