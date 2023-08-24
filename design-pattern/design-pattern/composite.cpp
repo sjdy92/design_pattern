@@ -30,8 +30,10 @@ public:
     virtual void print(int depth) override {
         Component::print(depth);
         ++depth;
-        for (auto c : components) {
-            c->print(depth);
+
+        // iterator
+        for (auto it = components.begin(); it != components.end(); ++it) {
+            (*it)->print(depth);
         }
     }
 
@@ -63,18 +65,18 @@ public:
     virtual std::string extension() { return "png"; }
 };
 
-int main() {
-    Folder* folder1 = new Folder("sub-dir");
-    Folder* folder2 = new Folder("root");
-    ExeFile* exe = new ExeFile("hello");
-    TextFile* txt = new TextFile("composite");
-    ImageFile* img = new ImageFile("pattern");
-
-    folder1->addComponent(exe);
-    folder1->addComponent(txt);
-    folder2->addComponent(folder1);
-    folder2->addComponent(img);
-    folder2->print(0);
-
-    return 0;
-}
+//int main() {
+//    Folder* folder1 = new Folder("sub-dir");
+//    Folder* folder2 = new Folder("root");
+//    ExeFile* exe = new ExeFile("hello");
+//    TextFile* txt = new TextFile("composite");
+//    ImageFile* img = new ImageFile("pattern");
+//
+//    folder1->addComponent(exe);
+//    folder1->addComponent(txt);
+//    folder2->addComponent(folder1);
+//    folder2->addComponent(img);
+//    folder2->print(0);
+//
+//    return 0;
+//}
