@@ -42,17 +42,17 @@ private:
     State* cpuState;
 };
 
-int main() {
-    CPUContext cpu;
-    State* states [] = {new FetchState(), new DecodeState(), new ExecutionState()};
-    int index = 0;
-    while (true)
-    {
-        Sleep(1000);
-        cpu.changeState(states[index]);
-        cpu.process();
-        index = (index + 1) % (sizeof(states) / sizeof(State*));
-    }
-
-    return 0;
-}
+//int main() {
+//    CPUContext cpu;
+//    State* states [] = {new FetchState(), new DecodeState(), new ExecutionState()};
+//    int index = 0;
+//    while (true)
+//    {
+//        Sleep(1000);
+//        cpu.changeState(states[index]);
+//        cpu.process();
+//        index = (index + 1) % (sizeof(states) / sizeof(State*));
+//    }
+//
+//    return 0;
+//}
