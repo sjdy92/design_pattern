@@ -1,3 +1,2 @@
-﻿  proxy-pattern.cpp
-C:\project\studty\design-pattern\design_pattern\design-pattern\design-pattern\proxy-pattern.cpp(119,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+﻿  builder-pattern.cpp
   design-pattern.vcxproj -> C:\project\studty\design-pattern\design_pattern\design-pattern\x64\Debug\design-pattern.exe

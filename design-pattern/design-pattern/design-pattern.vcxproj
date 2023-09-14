@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="adapter.cpp" />
+    <ClCompile Include="builder-pattern.cpp" />
     <ClCompile Include="command.cpp" />
     <ClCompile Include="composite.cpp" />
     <ClCompile Include="decorator.cpp" />

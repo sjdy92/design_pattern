@@ -88,7 +88,7 @@ class LogginProxy : public IProxy {
 class ProtectProxy : public IProxy {
     unordered_set<string> blackList;
     virtual bool canConnect(const string& ip) const {
-        if (blackList.end() == blackList.find(ip)) {
+        if (blackList.end() != blackList.find(ip)) {
             cout << "블랙리스트에 포함되어서 연결 불가 " << endl;
             return false;
         }
@@ -121,15 +121,15 @@ class CachingProxy : public IProxy {
     }
 };
  
-void main() {
-    ProxyServer proxyServer;
-    proxyServer.addProxy(new LogginProxy());
-    proxyServer.addProxy(new ProtectProxy());
-    proxyServer.addProxy(new CachingProxy());
-
-    while (true) {
-        std::string input;
-        std::getline(std::cin, input);
-        proxyServer.connect(input);
-    }
-}
+//void main() {
+//    ProxyServer proxyServer;
+//    proxyServer.addProxy(new LogginProxy());
+//    proxyServer.addProxy(new ProtectProxy());
+//    proxyServer.addProxy(new CachingProxy());
+//
+//    while (true) {
+//        std::string input;
+//        std::getline(std::cin, input);
+//        proxyServer.connect(input);
+//    }
+//}
