@@ -72,8 +72,8 @@ public:
     }
 };
 
-int main() {
-    DBConnector* connector = DBConnectorGenerator().buildMySql_8_1();
-    connector->connect("127.0.0.1:8000");
-    return 0;
-}
+//int main() {
+//    DBConnector* connector = DBConnectorGenerator().buildMySql_8_1();
+//    connector->connect("127.0.0.1:8000");
+//    return 0;
+//}

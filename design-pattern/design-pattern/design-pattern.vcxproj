@@ -26,6 +26,7 @@
     <ClCompile Include="decorator.cpp" />
     <ClCompile Include="facade.cpp" />
     <ClCompile Include="factory.cpp" />
+    <ClCompile Include="interpreter-pattern.cpp" />
     <ClCompile Include="iterator.cpp" />
     <ClCompile Include="proxy-pattern.cpp" />
     <ClCompile Include="singleton.cpp" />

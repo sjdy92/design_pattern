@@ -51,6 +51,9 @@
     <ClCompile Include="builder-pattern.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="interpreter-pattern.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="info\facade-info.h">
